@@ -32,9 +32,10 @@
 
     <div class="row row-content" ng-controller="MenuController">
         <div class="col-xs-12">
-            <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
+            <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right cap" type="button">
                 {{showDetails ? 'Hide Details':'Show Details'}}
             </button>
+            <a type="button" class="btn btn-xs btn-primary pull-right kap" href="dishdetails.html">Show customer reviews</a>
             
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" ng-class="{active:isSelected(1)}">
@@ -54,10 +55,10 @@
                 <ul class="media-list  tab-pane fade in active">
                     <li class="media" ng-repeat="dish in dishes | filter:filterText">
                         <div class="media-left media-middle">
-                            <a href="dishdetails1.html">
+                            
                                 <img class="media-object img-thumbnail"
                                      ng-src={{dish.image}} alt="Uthappizza">
-                            </a>
+                            
                         </div>
                         <div class="media-body">
                             <h2 class="media-heading">{{dish.name}}

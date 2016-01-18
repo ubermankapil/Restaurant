@@ -55,7 +55,7 @@
 
             <span class="h4">Customer Comments
             </span>
-            <span>Sort by: <input type="text" ng-model="criteria"/></span>
+            <span>Sort by: <input type="text" ng-model="criteria"/> ( rating, author, date )</span>
             <ul style="list-style: none;">
                 <li ng-repeat="comment in dishCtrl.dish.comments | orderBy :criteria">
                     <blockquote>
